@@ -7,22 +7,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
-    --primary-green: #4ade80;
-    --dark-green: #22c55e;
-    --darker-green: #2e7d32;
-    --text-dark: #1f2937;
-    --text-gray: #6b7280;
+    --primary-green: #097d4c;       /* Verde principal */
+    --dark-green: #065c38;          /* Verde más profundo */
+    --darker-green: #043d2c;        /* Verde casi negro */
+    --text-dark: #1a1a1a;
+    --text-gray: #666;
     --text-light: #9ca3af;
-    --bg-light: #f9fafb;
-    --bg-green: #f0fdf4;
-    --border-light: #e5e7eb;
+    --bg-light: #f1ead0;            /* Amarillo claro */
+    --bg-green: #f7f4e1;            /* Amarillo-verde suave */
+    --border-light: #e5dec2;        /* Borde cálido */
     --white: #ffffff;
     --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
     --shadow-md: 0 10px 30px rgba(0,0,0,0.1);
     --shadow-lg: 0 20px 40px rgba(0,0,0,0.15);
 }
+
+/* Cambiamos solo el footer azul */
+.footer {
+    background: var(--darker-green);
+    color: var(--white);
+    padding: 60px 20px 20px;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -145,12 +152,12 @@ body {
     color: var(--white);
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(74, 222, 128, 0.3);
+    box-shadow: 0 4px 15px rgba(9, 125, 76, 0.3);
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(74, 222, 128, 0.4);
+    box-shadow: 0 6px 20px rgba(9, 125, 76, 0.4);
 }
 
 /* Carrito */
@@ -331,7 +338,7 @@ body {
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 500;
-    border: 1px solid #dcfce7;
+    border: 1px solid var(--border-light);
 }
 
 .item-footer {
@@ -358,12 +365,12 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(74, 222, 128, 0.3);
+    box-shadow: 0 4px 15px rgba(9, 125, 76, 0.3);
 }
 
 .order-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(74, 222, 128, 0.4);
+    box-shadow: 0 6px 20px rgba(9, 125, 76, 0.4);
 }
 
 /* ======================
@@ -445,7 +452,7 @@ body {
 
 .extra-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(74, 222, 128, 0.3);
+    box-shadow: 0 4px 15px rgba(9, 125, 76, 0.3);
 }
 
 /* ======================
@@ -453,7 +460,7 @@ body {
    ====================== */
 
 .footer {
-    background: #1a237e;
+    background: var(--darker-green);
     color: var(--white);
     padding: 60px 20px 20px;
 }
@@ -498,7 +505,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: var(--primary-green);
+    color: var(--bg-light);
 }
 
 .footer-info p {
@@ -610,154 +617,154 @@ body {
     }
 }
 
-        /* ESTILOS PARA EL BOTÓN DE ENSALADA PERSONALIZADA */
-        .custom-salad-card {
-            position: relative;
-            background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
-            border-radius: 20px;
-            padding: 2.5rem;
-            margin: 2rem 0 3rem;
-            color: white;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: 1px solid var(--border-light);
-        }
+/* ESTILOS PARA EL BOTÓN DE ENSALADA PERSONALIZADA */
+.custom-salad-card {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 2rem 0 3rem;
+    color: white;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--border-light);
+}
 
-        .custom-salad-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 50px rgba(74, 222, 128, 0.3);
-        }
+.custom-salad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(9, 125, 76, 0.3);
+}
 
-        .card-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80" opacity="0.1"><path fill="%23FFFFFF" d="M50,15 C60,5 80,10 85,25 C90,40 75,55 60,60 C45,65 35,80 25,75 C15,70 10,50 20,40 C30,30 40,25 50,15 Z"/></svg>');
-            z-index: 1;
-        }
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80" opacity="0.1"><path fill="%23FFFFFF" d="M50,15 C60,5 80,10 85,25 C90,40 75,55 60,60 C45,65 35,80 25,75 C15,70 10,50 20,40 C30,30 40,25 50,15 Z"/></svg>');
+    z-index: 1;
+}
 
-        .card-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
+.card-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
 
-        .card-icon {
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
 
-        .card-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            line-height: 1.3;
-        }
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
 
-        .highlight {
-            color: #FFEB3B;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
+.highlight {
+    color: var(--bg-light);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-        .card-description {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            line-height: 1.5;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.card-description {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .card-features {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2.5rem;
-            flex-wrap: wrap;
-        }
+.card-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
 
-        .feature {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
 
-        .feature i {
-            color: #FFEB3B;
-        }
+.feature i {
+    color: var(--bg-light);
+}
 
-        .create-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: #FFFFFF;
-            color: var(--dark-green);
-            text-decoration: none;
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
+.create-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--white);
+    color: var(--dark-green);
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
-        .create-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            background: #FFEB3B;
-            color: var(--dark-green);
-        }
+.create-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: var(--bg-light);
+    color: var(--dark-green);
+}
 
-        /* Responsive para el card personalizado */
-        @media (max-width: 768px) {
-            .custom-salad-card {
-                padding: 2rem 1.5rem;
-                margin: 1.5rem 0 2rem;
-            }
+/* Responsive para el card personalizado */
+@media (max-width: 768px) {
+    .custom-salad-card {
+        padding: 2rem 1.5rem;
+        margin: 1.5rem 0 2rem;
+    }
 
-            .card-title {
-                font-size: 1.6rem;
-            }
+    .card-title {
+        font-size: 1.6rem;
+    }
 
-            .card-features {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: center;
-            }
+    .card-features {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
 
-            .create-btn {
-                padding: 0.875rem 2rem;
-                font-size: 1rem;
-            }
-        }
+    .create-btn {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+}
 
-        @media (max-width: 480px) {
-            .custom-salad-card {
-                padding: 1.5rem;
-            }
+@media (max-width: 480px) {
+    .custom-salad-card {
+        padding: 1.5rem;
+    }
 
-            .card-title {
-                font-size: 1.4rem;
-            }
+    .card-title {
+        font-size: 1.4rem;
+    }
 
-            .card-icon {
-                width: 60px;
-                height: 60px;
-                margin-bottom: 1rem;
-            }
-        }
+    .card-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+}

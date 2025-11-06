@@ -2,16 +2,17 @@
    VARIABLES Y RESET
 ========================================= */
 :root {
-    --primary-green: #4CAF50;
-    --primary-dark: #2E7D32;
-    --secondary-orange: #FF9800;
-    --accent-yellow: #FFC107;
-    --bg-light: #F5F7FA;
+    --primary-green: #097d4c;      /* Verde oscuro elegante */
+    --primary-dark: #065c38;       /* Verde más profundo */
+    --secondary-orange: #f1ead0;   /* Amarillo claro */
+    --accent-yellow: #f1ead0;      /* Amarillo claro */
+    --bg-light: #f1ead0;           /* Fondo claro */
     --text-dark: #1a1a1a;
     --text-gray: #666;
     --white: #ffffff;
     --shadow: rgba(0, 0, 0, 0.1);
 }
+
 
 * {
     margin: 0;
@@ -61,7 +62,7 @@ body {
 }
 
 .logo-image {
-    height: 60px;
+    height: 130px;
     width: auto;
 }
 

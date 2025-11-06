@@ -9,20 +9,21 @@
 }
 
 :root {
-    --primary-green: #4ade80;
-    --dark-green: #22c55e;
-    --darker-green: #2e7d32;
-    --text-dark: #1f2937;
-    --text-gray: #6b7280;
-    --text-light: #9ca3af;
-    --bg-light: #f9fafb;
-    --bg-green: #f0fdf4;
-    --border-light: #e5e7eb;
-    --white: #ffffff;
-    --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
-    --shadow-md: 0 10px 30px rgba(0,0,0,0.1);
-    --shadow-lg: 0 20px 40px rgba(0,0,0,0.15);
+    --primary-green: #097d4c;      /* Verde principal (sustituye el anterior verde brillante) */
+    --dark-green: #065c3e;         /* Verde más profundo para gradientes y hover */
+    --darker-green: #043d2c;       /* Verde casi negro para detalles y sombras */
+    --text-dark: #1e2a23;          /* Texto principal ligeramente verdoso, combina con el tono base */
+    --text-gray: #4b5a50;          /* Gris con tinte verde oscuro */
+    --text-light: #7a887d;         /* Gris verdoso claro para texto secundario */
+    --bg-light: #f1ead0;           /* Fondo principal cálido (amarillo claro) */
+    --bg-green: #e5f0e0;           /* Fondo alterno con leve verde pálido */
+    --border-light: #dcd3b5;       /* Bordes con tono arena */
+    --white: #ffffff;              /* Blanco puro para contraste */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -82,7 +83,7 @@ body {
 }
 
 .logo-image {
-    width: 100%;
+    width: 130%;
     height: auto;
     display: block;
 }
@@ -589,7 +590,7 @@ body {
    ====================== */
 
 .footer {
-    background: #1a237e;
+    background: #065c3e;
     color: var(--white);
     padding: 60px 20px 20px;
 }

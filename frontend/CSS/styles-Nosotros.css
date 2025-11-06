@@ -9,16 +9,16 @@
 }
 
 :root {
-    --primary-green: #4ade80;
-    --dark-green: #22c55e;
-    --darker-green: #16a34a;
-    --text-dark: #1f2937;
-    --text-gray: #6b7280;
+    --primary-green: #097d4c;
+    --dark-green: #065c38;
+    --darker-green: #043d2c;
+    --text-dark: #1a1a1a;
+    --text-gray: #666;
     --text-light: #9ca3af;
-    --bg-light: #f9fafb;
-    --bg-green: #f0fdf4;
-    --bg-green-light: #dcfce7;
-    --border-light: #e5e7eb;
+    --bg-light: #f1ead0;
+    --bg-green: #f7f4e1;
+    --bg-green-light: #f9f6e8;
+    --border-light: #e5dec2;
     --white: #ffffff;
     --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
     --shadow-md: 0 10px 30px rgba(0,0,0,0.06);
@@ -86,7 +86,7 @@ body {
 }
 
 .logo-image {
-    width: 100%;
+    width: 130%;
     height: auto;
     display: block;
 }
@@ -149,13 +149,13 @@ body {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(74, 222, 128, 0.25);
+    box-shadow: 0 4px 15px rgba(9, 125, 76, 0.25);
     display: inline-block;
 }
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(74, 222, 128, 0.35);
+    box-shadow: 0 6px 20px rgba(9, 125, 76, 0.35);
 }
 
 /* Carrito */
@@ -233,7 +233,7 @@ body {
 }
 
 .highlight {
-    color: #a7f3d0;
+    color: var(--bg-light);
 }
 
 .hero-subtitle {
@@ -459,7 +459,7 @@ body {
 }
 
 .initiative-icon {
-    background: #ecfdf5;
+    background: var(--bg-green);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -488,7 +488,7 @@ body {
 
 .validation-section {
     padding: 80px 20px;
-    background: #111827;
+    background: var(--darker-green);
     color: var(--white);
 }
 
@@ -518,7 +518,7 @@ body {
     display: block;
     font-size: 3.5rem;
     font-weight: 700;
-    color: #86efac;
+    color: var(--bg-light);
     margin-bottom: 1rem;
 }
 
@@ -645,12 +645,12 @@ body {
     display: inline-block;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(74, 222, 128, 0.28);
+    box-shadow: 0 10px 30px rgba(9, 125, 76, 0.28);
 }
 
 .cta-large:hover {
     transform: translateY(-4px);
-    box-shadow: 0 18px 50px rgba(74, 222, 128, 0.32);
+    box-shadow: 0 18px 50px rgba(9, 125, 76, 0.32);
 }
 
 /* ======================
@@ -658,7 +658,7 @@ body {
    ====================== */
 
 .footer {
-    background: #1a237e;
+    background: var(--darker-green);
     color: var(--white);
     padding: 60px 20px 20px;
 }
@@ -703,7 +703,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: var(--primary-green);
+    color: var(--bg-light);
 }
 
 .footer-info p {
